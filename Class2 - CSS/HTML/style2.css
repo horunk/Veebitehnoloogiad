@@ -1,0 +1,89 @@
+body{
+	background: #5D737E;
+	transition:all 5s ease;
+	font-family: arial, helvetica, serif
+
+}
+
+#container{
+	background-color: white;
+	width: 1200px;
+	margin-left: auto;
+	margin-right: auto;
+	border-color: #87BBA2;
+	border-style: solid;
+	border-width: 20px;
+	border-radius: 40px;
+	transition:all 0.3s ease;
+	background-color: #F0F7EE;
+}
+
+
+#content{
+	padding: 20px;
+
+}
+
+
+#header{
+color: white;
+background-color: #498367; 
+padding-top: 10px;
+padding-bottom: 10px;
+text-align: center;
+border-radius: 15px 15px 0px 0px;
+font-size: 150%;
+}
+
+#me{
+	width: 500px;
+	float: left;
+	margin-left: 10%;
+	padding: 20px 0px 20px 0px;
+}
+
+.name{
+	font-weight: bold;
+}
+
+#about{
+	width: 400px;
+	float: right;
+	margin-right: 10%;
+	padding: 20px 0px 20px 0px;
+
+}
+
+#feedback{
+	width: 500px;
+	float: left;
+	padding: 20px 0px 20px 0px;
+	margin-left: 10%;
+}
+
+#footer{
+	clear: both;
+	padding: 20px;
+	padding-top: 30px;
+	text-align: center;
+	background-color: #1EA896; 
+	border-radius: 0px 0px 15px 15px;
+	color:white; 
+}
+
+.grow:hover{
+    -webkit-transform: scale(5);
+    -ms-transform: scale(5);
+    transform: scale(5);
+	transition:all 3s ease;
+	
+}
+
+table{
+	background-color: #eff6f2;
+}
+
+thead{
+	background-color: #bedacc;
+	font-weight: bold;
+}
