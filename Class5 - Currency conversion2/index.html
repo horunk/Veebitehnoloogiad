@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Currency converter</title>
+</head>
+
+<body>
+
+    <p>I want to convert from:</p>
+    <input class="radio input" type="radio" name="from" id="EUR" autocomplete="off" checked="checked">EUR
+    <input class="radio input" type="radio" name="from" id="USD" autocomplete="off" >USD
+    <input class="radio input" type="radio" name="from" id="GBP" autocomplete="off" >GBP
+    <br>
+    <input class="inputAmount" id="from" type="number">
+
+
+    <p>to:</p>
+    <input class="radio output" type="radio" name="to" id="EUR" autocomplete="off" checked="checked">EUR
+    <input class="radio output" type="radio" name="to" id="USD" autocomplete="off" >USD
+    <input class="radio output" type="radio" name="to" id="GBP" autocomplete="off" >GBP
+    <br>
+    <p class="output" ></p>
+
+
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="convert.js"></script>
+
+</html>
