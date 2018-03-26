@@ -19,15 +19,15 @@ $(document).ready(function(){
 		  console.log( "Handler for .click() called." );
 			
 		  var input = $(".inputAmount").val();
-		  var inputID = $(".input:checked" ).attr('id');
-		  var outputID = $(".output:checked" ).attr('id');
+		  var inputID = $("#inputX :checked" ).attr('id');
+		  var outputID = $("#outputX :checked" ).attr('id');
 
-		  var output = ((input/eval("json.rates."+$(".input:checked" ).attr('id')))*eval("json.rates."+$(".output:checked" ).attr('id'))).toFixed(2);
-		  $(".output").text(input + " " + inputID + " is equal to " + output + " " + outputID );
+		  var output = ((input/eval("json.rates."+$(".inputX:checked" ).attr('id')))*eval("json.rates."+$(".outputX:checked" ).attr('id'))).toFixed(2);
+		  $(".outputText").text(input + " " + inputID + " is equal to " + output + " " + outputID );
 			
 		}
 		
-		$( ".radio" ).click(function() {
+		$( ".radioX" ).click(function() {
 			calculate();
 		});
 
@@ -36,6 +36,14 @@ $(document).ready(function(){
 		});
 
 		$(".inputAmount").keyup(function(){
+			calculate();
+		});
+
+		$("#inputX :input").change(function() {
+			calculate();
+		});
+
+		$("#outputX :input").change(function() {
 			calculate();
 		});
 

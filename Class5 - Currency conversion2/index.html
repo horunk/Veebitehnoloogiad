@@ -2,29 +2,72 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Currency converter</title>
+<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
 
-    <p>I want to convert from:</p>
-    <input class="radio input" type="radio" name="from" id="EUR" autocomplete="off" checked="checked">EUR
-    <input class="radio input" type="radio" name="from" id="USD" autocomplete="off" >USD
-    <input class="radio input" type="radio" name="from" id="GBP" autocomplete="off" >GBP
-    <br>
-    <input class="inputAmount" id="from" type="number">
+
+        <div class="container-fluid">
+                <div class="row-fluid">
+                    <div class="centering text-center">
 
 
-    <p>to:</p>
-    <input class="radio output" type="radio" name="to" id="EUR" autocomplete="off" checked="checked">EUR
-    <input class="radio output" type="radio" name="to" id="USD" autocomplete="off" >USD
-    <input class="radio output" type="radio" name="to" id="GBP" autocomplete="off" >GBP
-    <br>
-    <p class="output" ></p>
+    <div class="container">
+        <div class="jumbotron vertical-center">
+        <p>I want to convert from:</p>
+        <input class="inputAmount" id="from" type="number" value="10" min="0" max="999999999">
+        <br>
+        <div id="inputX" class="btn-group" data-toggle="buttons">
+            <label class="btn btn-default active form-check-label">
+                <input class="radioX inputX" type="radio" name="from" id="EUR" autocomplete="off" checked="checked">EUR
+            </label>
+            <label class="btn btn-default form-check-label">
+                <input class="radioX inputX" type="radio" name="from" id="USD" autocomplete="off" >USD
+            </label>
+            <label class="btn btn-default form-check-label">
+                <input class="radioX inputX" type="radio" name="from" id="GBP" autocomplete="off" >GBP
+            </label>
+        </div>
+        <br>
+       
 
+
+        <p>to:</p>
+
+        <div id="outputX" class="btn-group" data-toggle="buttons">
+            <label class="btn btn-default active form-check-label">
+                <input class="radioX outputX" type="radio" name="to" id="EUR" autocomplete="off" checked="checked">EUR
+            </label>
+            <label class="btn btn-default form-check-label">
+                <input class="radioX outputX" type="radio" name="to" id="USD" autocomplete="off" >USD
+            </label>
+            <label class="btn btn-default form-check-label">
+                <input class="radioX outputX" type="radio" name="to" id="GBP" autocomplete="off" >GBP
+            </label>
+        </div>
+
+
+        <br>
+        <p class="outputText"> </p>
+    </div>
+    </div>
+
+
+
+</div>
+</div>
+</div>
 
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="convert.js"></script>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 </html>
