@@ -9,6 +9,8 @@ $(document).ready(function(){
 	  var usdRate = json.rates.USD;
 		var eurRate = json.rates.EUR;
 		var audRate = json.rates.AUD;
+		var audRate = json.rates.JPY;
+		var audRate = json.rates.CHF;
 	  
 	  console.log(json.rates);
 		console.log('the rate for gbp is ' + gbpRate);
