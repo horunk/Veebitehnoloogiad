@@ -5,11 +5,12 @@ $(document).ready(function(){
     url: 'http://data.fixer.io/api/latest?access_key=' + key,
     dataType: 'jsonp',
     success: function(json) {
-      var gbpRate = json.rates.GBP;
+		var gbpRate = json.rates.GBP;
 	  var usdRate = json.rates.USD;
-	  var eurRate = json.rates.EUR;
+		var eurRate = json.rates.EUR;
+		var audRate = json.rates.AUD;
 	  
-	  
+	  console.log(json.rates);
 		console.log('the rate for gbp is ' + gbpRate);
 		console.log('the rate for eur is ' + eurRate);
 		console.log('the rate for usd is ' + usdRate);
